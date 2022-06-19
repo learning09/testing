@@ -92,7 +92,7 @@ if __name__ == '__main__':
     
     #for folder in os.listdir(args.path_b):
     for folder in range(args.iter,args.end+1):
-        folder = 'eval_%d'%(folder*10000)
+        folder = 'eval_%d'%(folder*50)
         if os.path.exists(os.path.join( args.path_b, folder )):
             print(folder)
             dset_b = ImageFolder( os.path.join( args.path_b, folder ), transform)
